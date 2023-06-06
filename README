@@ -2,7 +2,7 @@ Título:
 Catálogo de Filmes 
 
 Descrição
-Catálogo de Filmes que Inspiram - utilizando o Banco de Dados SQLite3.
+Catálogo de Filmes  - utilizando o CRUD.
 
 Objetivo do Projeto
-Imiciar o conhecimento sobre Banco de Dados através da linguagem de Programação Python.
+Iniciar e desenvolver o conhecimento sobre CRUD (CREAT, READ, UPDATE, DELETE) através da linguagem de programação Python.
