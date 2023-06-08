@@ -4,3 +4,5 @@ class Filme:
         self.diretor = diretor
         self.genero = genero
         self.ano_lancamento = ano_lancamento
+
+        
