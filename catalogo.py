@@ -1,4 +1,5 @@
 from filme import Filme
+from time import sleep
 
 '''Lista de Filmes
 'Rocky', 'John G. Avildsen', 'Drama', 1976
@@ -23,3 +24,16 @@ catalogoDeFilmes = {
     'filme7': Filme('Creed', 'Ryan Coogler', 'Drama', 2015),
     'filme8': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
 }
+
+def criarFilme(catalogo, titulo, diretor, genero, anoLancamento):
+    filmeNovo = { 
+        'titulo': titulo,
+        'diretor': diretor,
+        'genero': genero,
+        'anoLancamento': anoLancamento
+    }
+    catalogo[titulo] = filmeNovo
+    sleep(3)
+    print('Salvando o Filme no catálogo...')
+    sleep(1.5)
+    print('O filme novo foi adicionado com sucesso!!')
