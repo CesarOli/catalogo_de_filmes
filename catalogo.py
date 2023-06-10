@@ -1,17 +1,6 @@
 from filme import Filme
 from time import sleep
 
-'''Lista de Filmes
-'Rocky', 'John G. Avildsen', 'Drama', 1976
-'Rocky II', 'Sylvester Stallone', 'Drama', 1979
-'Rocky III', 'Sylvester Stallone', 'Drama', 1982
-'Rocky IV', 'Sylvester Stallone', 'Drama', 1985
-'Rocky V', 'John G. Avildsen', 'Drama', 1990
-'Rocky Balboa', 'Sylvester Stallone', 'Drama', 2006
-'Creed', 'Ryan Coogler', 'Drama', 2015
-'Creed II', 'Steven Caple Jr.', 'Drama', 2018
-'''
-
 catalogoDeFilmes = { 
     
     #chave    classe e informações dos filmes       
@@ -24,6 +13,12 @@ catalogoDeFilmes = {
     'filme7': Filme('Creed', 'Ryan Coogler', 'Drama', 2015),
     'filme8': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
 }
+def adicionaFilmes(titulo, diretor, genero, anoLancamento):
+    filme = Filme(titulo, diretor, genero, anoLancamento)
+    catalogoDeFilmes[titulo] = filme
+
+adicionaFilmes('Space Jam', 'Joe Pytka', 'Animação/Comédia', '1996')
+print(catalogoDeFilmes)
 
 def criarFilme(catalogo, titulo, diretor, genero, anoLancamento):
     filmeNovo = { 
