@@ -22,15 +22,20 @@ catalogoDeFilmes = {
     'filme7': Filme('Creed', 'Ryan Coogler', 'Drama', 2015),
     'filme8': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
 }
-for chave in catalogoDeFilmes:
-    filme = catalogoDeFilmes[chave]
-    sleep(0.4)
-    print(filme.titulo)
-sleep(1.5)
-print('Fim do programa!!')
 
+def adicionarFilmes(catalogo):
+    titulo = input('Informe o nome do filme que deseja adicionar: ')
+    diretor = input('Informe o nome do diretor deste filme: ')
+    genero = input('Informe o gênero deste filme que deseja incluir: ')
+    ano_lancamento = int(input('Informe em que ano este filme foi lançado: '))
 
-def editarFilmes(catalogo, titulo):
+    novoFilme = Filme(titulo, diretor, genero, ano_lancamento)
+    catalogo[titulo]  = novoFilme
+
+adicionarFilmes(catalogoDeFilmes)
+sleep(2)
+
+'''def editarFilmes(catalogo, titulo):
     if:
     else:
 
@@ -57,4 +62,4 @@ while True:
     elif:
     elif:
     elif:
-    else:
+    else:'''
