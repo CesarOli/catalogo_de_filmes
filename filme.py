@@ -38,3 +38,16 @@ def removerFilme(catalogo, titulo):
     if
         del
     else:
+
+
+def menu()):
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    
+return
+         
+    return
