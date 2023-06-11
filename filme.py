@@ -33,4 +33,8 @@ print('Fim do programa!!')
 def editarFilmes(catalogo, titulo):
     if:
     else:
-        
+
+def removerFilme(catalogo, titulo):
+    if
+        del
+    else:
