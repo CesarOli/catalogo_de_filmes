@@ -35,6 +35,18 @@ def adicionarFilmes(catalogo):
 adicionarFilmes(catalogoDeFilmes)
 sleep(2)
 
+print('Aguarde, estamos adicionando o filme ao catálogo.')
+sleep(1.5)
+print('Filme adicionado com sucesso!')
+sleep(2)
+print('Catálogo de Filmes: ')
+
+for chave, filme in catalogoDeFilmes.items():
+    sleep(0.5)
+    print(filme.titulo)
+
+
+
 '''def editarFilmes(catalogo, titulo):
     if:
     else:
