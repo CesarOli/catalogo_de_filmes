@@ -48,6 +48,13 @@ def menu()):
     print()
     print()
     
-return
-         
     return
+
+while True:
+
+    if:
+    elif:
+    elif:
+    elif:
+    elif:
+    else:
