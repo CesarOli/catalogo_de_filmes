@@ -46,6 +46,20 @@ for chave, filme in catalogoDeFilmes.items():
     print(filme.titulo)
 
 
+def visualizarCatalogo(catalogo):
+    print('------------------')
+    print('CATÁLOGO DE FILMES')
+    print('------------------')
+
+    if len(catalogo) == 0:
+        print('Nenhum filme encontrado neste catálogo.')
+    else:
+        for chave in catalogo:
+            filme = catalogo[chave]
+            sleep(0.5)
+            print(f"Filme: {filme.titulo}")
+
+    
 
 '''def editarFilmes(catalogo, titulo):
     if:
@@ -74,4 +88,8 @@ while True:
     elif:
     elif:
     elif:
-    else:'''
+    else:
+        
+        '''
+visualizarCatalogo(catalogoDeFilmes)
+
