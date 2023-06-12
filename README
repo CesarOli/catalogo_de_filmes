@@ -2,7 +2,21 @@ Título:
 Catálogo de Filmes 
 
 Descrição
-Catálogo de Filmes  - utilizando o CRUD (CREAT, READ, UPDATE, DELETE).
+Criação de um Catálogo de Filmes aplicando a técnicaCRUD (CREAT, READ, UPDATE, DELETE).
 
 Objetivo do Projeto
 Iniciar e desenvolver o conhecimento sobre CRUD através da linguagem de programação Python.
+
+
+O Objetivo do projeto foi alcançado, e aprendizados adquiridos.
+
+- Definição dos requisitos de forma mais obejtiva;
+- Importancia da organização do código;
+- Definição de Classe;
+- Criação de funções para interagir com usuário e suas necessidades;
+- Iteração com o dicionário definido(Catálogo de Filmes);
+- atualizar variáveis com novas informações fornecidas pelo usuário;
+
+
+Contato:
+https://www.linkedin.com/in/cesaroli/
