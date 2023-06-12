@@ -1,5 +1,6 @@
 from time import sleep
 
+# Definição da Classe Filme
 class Filme:
     def __init__(self, titulo, diretor, genero, anoLancamento):
         self.titulo = titulo
@@ -10,6 +11,7 @@ class Filme:
     def imprimirNomeFilme(self):
         return self.titulo
 
+# Criação do Catálogo de Filmes
 catalogoDeFilmes = { 
     
     #chave    classe e informações dos filmes       
@@ -23,6 +25,7 @@ catalogoDeFilmes = {
     'Creed II': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
 }
 
+# Função para adicionar filmes ao catálogo
 def adicionarFilmes(catalogo):
     titulo = input('Informe o nome do filme que deseja adicionar: ')
     diretor = input('Informe o nome do diretor deste filme: ')
@@ -32,7 +35,7 @@ def adicionarFilmes(catalogo):
     novoFilme = Filme(titulo, diretor, genero, anoLancamento)
     catalogo[titulo]  = novoFilme
 
-
+# Função para visualizar catálogo de filmes
 def visualizarCatalogo(catalogo):
     print('------------------')
     print('CATÁLOGO DE FILMES')
@@ -46,7 +49,7 @@ def visualizarCatalogo(catalogo):
             sleep(0.5)
             print(f"Filme: {filme.titulo}")
 
-
+# Função para atualizar informações de um filme no catálogo
 def atualizarFilmes(catalogo, titulo):
     if titulo in catalogo:
         filme = catalogo[titulo]
@@ -57,7 +60,7 @@ def atualizarFilmes(catalogo, titulo):
         novoGenero = input('Informe o novo gênero deste filme: ')
         novoAnoLancamento = int(input('Informe o novo ano de lançamento deste filme: '))
 
-        #atualiza as informações do filme no catálogo
+        # Atualiza as informações do filme no catálogo
         filme.titulo = novoTitulo
         filme.diretor = novoDiretor
         filme.genero = novoGenero
@@ -68,6 +71,7 @@ def atualizarFilmes(catalogo, titulo):
     else:
         print(f'O filme "{titulo}" não consta na lista de filmes deste Catálogo. Obrigado!!')
 
+# Função para remover filmes do catálogo
 def removerFilme(catalogo, titulo):
     titulo = input('Informe o nome do filme que deseja remover: ')
     if titulo in catalogo:
@@ -77,19 +81,24 @@ def removerFilme(catalogo, titulo):
     else:
         print(f'O filme "{titulo}" não consta neste Catálogo de filmes. Obrigado!!')
 
+
+# Chamando função de adicionar filmes
+
 adicionarFilmes(catalogoDeFilmes)
 sleep(2)
-
 print('Aguarde, estamos adicionando o filme ao catálogo.')
 sleep(1.5)
 print('Filme adicionado com sucesso!')
 sleep(2)
 
+# Chamando a funçao de visualizar filmes
 visualizarCatalogo(catalogoDeFilmes)
 
+# Chamando a função de atualizar filmes
 atualizarFilmes(catalogoDeFilmes, 'Rocky')
 visualizarCatalogo(catalogoDeFilmes)
 
+# Chamando a função remover filmes
 removerFilme(catalogoDeFilmes, 'Rocky II')
 visualizarCatalogo(catalogoDeFilmes)
 
