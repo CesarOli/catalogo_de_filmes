@@ -1,11 +1,11 @@
 from time import sleep
 
 class Filme:
-    def __init__(self, titulo, diretor, genero, ano_lancamento):
+    def __init__(self, titulo, diretor, genero, anoLancamento):
         self.titulo = titulo
         self.diretor = diretor
         self.genero = genero
-        self.ano_lancamento = ano_lancamento
+        self.ano_lancamento = anoLancamento
 
     def imprimirNomeFilme(self):
         return self.titulo
@@ -23,13 +23,13 @@ catalogoDeFilmes = {
     'filme8': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
 }
 
-def adicionarFilmes(catalogo):
+'''def adicionarFilmes(catalogo):
     titulo = input('Informe o nome do filme que deseja adicionar: ')
     diretor = input('Informe o nome do diretor deste filme: ')
     genero = input('Informe o gênero deste filme que deseja incluir: ')
-    ano_lancamento = int(input('Informe em que ano este filme foi lançado: '))
+    anoLancamento = int(input('Informe em que ano este filme foi lançado: '))
 
-    novoFilme = Filme(titulo, diretor, genero, ano_lancamento)
+    novoFilme = Filme(titulo, diretor, genero, anoLancamento)
     catalogo[titulo]  = novoFilme
 
 adicionarFilmes(catalogoDeFilmes)
@@ -57,15 +57,31 @@ def visualizarCatalogo(catalogo):
         for chave in catalogo:
             filme = catalogo[chave]
             sleep(0.5)
-            print(f"Filme: {filme.titulo}")
+            print(f"Filme: {filme.titulo}")'''
 
-    
 
-'''def editarFilmes(catalogo, titulo):
-    if:
+def atualizarFilmes(catalogo, titulo):
+    if titulo in catalogo:
+        filme = catalogo[titulo]
+
+        print(f'Informe as novas informações para o filme "{titulo}: ')
+        novoTitulo = input('Informe o novo título deste filme: ')
+        novoDiretor = input('Informe o novo diretor deste filme: ')
+        novoGenero = input('Informe o novo gênero deste filme: ')
+        novoAnoLancamento = int(input('Informe o novo ano de lançamento deste filme: '))
+
+        #atualiza as informações do filme no catálogo
+        filme.titulo = novoTitulo
+        filme.diretor = novoDiretor
+        filme.genero = novoGenero
+        filme.anoLancamento = novoAnoLancamento
+
+        print(f'O filme "{titulo}" foi atualizado com sucesso ao Catalogo.')
+
     else:
+        print(f'O filme "{titulo}" não consta na lista de filmes deste Catálogo. Obrigado!!')
 
-def removerFilme(catalogo, titulo):
+'''def removerFilme(catalogo, titulo):
     if
         del
     else:
@@ -90,6 +106,8 @@ while True:
     elif:
     else:
         
-        '''
-visualizarCatalogo(catalogoDeFilmes)
+        
+visualizarCatalogo(catalogoDeFilmes)'''
+atualizarFilmes(catalogoDeFilmes, 'filme1')
+
 
