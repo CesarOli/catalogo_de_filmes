@@ -13,17 +13,17 @@ class Filme:
 catalogoDeFilmes = { 
     
     #chave    classe e informações dos filmes       
-    'filme1': Filme('Rocky', 'John G. Avildsen', 'Drama', 1976),
-    'filme2': Filme('Rocky II', 'Sylvester Stallone', 'Drama', 1979),
-    'filme3': Filme('Rocky III', 'Sylvester Stallone', 'Drama', 1982),
-    'filme4': Filme('Rocky IV', 'Sylvester Stallone', 'Drama', 1985),
-    'filme5': Filme('Rocky V', 'John G. Avildsen', 'Drama', 1990),
-    'filme6': Filme('Rocky Balboa', 'Sylvester Stallone', 'Drama', 2006),
-    'filme7': Filme('Creed', 'Ryan Coogler', 'Drama', 2015),
-    'filme8': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
+    'Rocky': Filme('Rocky', 'John G. Avildsen', 'Drama', 1976),
+    'Rocky II': Filme('Rocky II', 'Sylvester Stallone', 'Drama', 1979),
+    'Rocky III': Filme('Rocky III', 'Sylvester Stallone', 'Drama', 1982),
+    'Rocky IV': Filme('Rocky IV', 'Sylvester Stallone', 'Drama', 1985),
+    'Rocky V': Filme('Rocky V', 'John G. Avildsen', 'Drama', 1990),
+    'Rocky VI': Filme('Rocky Balboa', 'Sylvester Stallone', 'Drama', 2006),
+    'Creed': Filme('Creed', 'Ryan Coogler', 'Drama', 2015),
+    'Creed II': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
 }
 
-'''def adicionarFilmes(catalogo):
+def adicionarFilmes(catalogo):
     titulo = input('Informe o nome do filme que deseja adicionar: ')
     diretor = input('Informe o nome do diretor deste filme: ')
     genero = input('Informe o gênero deste filme que deseja incluir: ')
@@ -31,19 +31,6 @@ catalogoDeFilmes = {
 
     novoFilme = Filme(titulo, diretor, genero, anoLancamento)
     catalogo[titulo]  = novoFilme
-
-adicionarFilmes(catalogoDeFilmes)
-sleep(2)
-
-print('Aguarde, estamos adicionando o filme ao catálogo.')
-sleep(1.5)
-print('Filme adicionado com sucesso!')
-sleep(2)
-print('Catálogo de Filmes: ')
-
-for chave, filme in catalogoDeFilmes.items():
-    sleep(0.5)
-    print(filme.titulo)
 
 
 def visualizarCatalogo(catalogo):
@@ -57,7 +44,7 @@ def visualizarCatalogo(catalogo):
         for chave in catalogo:
             filme = catalogo[chave]
             sleep(0.5)
-            print(f"Filme: {filme.titulo}")'''
+            print(f"Filme: {filme.titulo}")
 
 
 def atualizarFilmes(catalogo, titulo):
@@ -81,33 +68,28 @@ def atualizarFilmes(catalogo, titulo):
     else:
         print(f'O filme "{titulo}" não consta na lista de filmes deste Catálogo. Obrigado!!')
 
-'''def removerFilme(catalogo, titulo):
-    if
-        del
+def removerFilme(catalogo, titulo):
+    titulo = input('Informe o nome do filme que deseja remover: ')
+    if titulo in catalogo:
+        del catalogo[titulo]
+        print(f'O filme "{titulo}" foi removido do catalogo com sucesso!!')
+
     else:
+        print(f'O filme "{titulo}" não consta neste Catálogo de filmes. Obrigado!!')
 
+adicionarFilmes(catalogoDeFilmes)
+sleep(2)
 
-def menu()):
-    print()
-    print()
-    print()
-    print()
-    print()
-    print()
-    
-    return
+print('Aguarde, estamos adicionando o filme ao catálogo.')
+sleep(1.5)
+print('Filme adicionado com sucesso!')
+sleep(2)
 
-while True:
+visualizarCatalogo(catalogoDeFilmes)
 
-    if:
-    elif:
-    elif:
-    elif:
-    elif:
-    else:
-        
-        
-visualizarCatalogo(catalogoDeFilmes)'''
-atualizarFilmes(catalogoDeFilmes, 'filme1')
+atualizarFilmes(catalogoDeFilmes, 'Rocky')
+visualizarCatalogo(catalogoDeFilmes)
 
+removerFilme(catalogoDeFilmes, 'Rocky II')
+visualizarCatalogo(catalogoDeFilmes)
 
