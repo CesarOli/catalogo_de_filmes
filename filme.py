@@ -100,5 +100,8 @@ visualizarCatalogo(catalogoDeFilmes)
 
 # Chamando a função remover filmes
 removerFilme(catalogoDeFilmes, 'Rocky II')
+print('Aguarde um momento, atualizando Catálogo...')
+sleep(1.5)
+print('Catálogo de Filmes Atualizado com Sucesso!!')
 visualizarCatalogo(catalogoDeFilmes)
 
