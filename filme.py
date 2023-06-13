@@ -23,6 +23,7 @@ catalogoDeFilmes = {
     'Rocky VI': Filme('Rocky Balboa', 'Sylvester Stallone', 'Drama', 2006),
     'Creed': Filme('Creed', 'Ryan Coogler', 'Drama', 2015),
     'Creed II': Filme('Creed II', 'Steven Caple Jr.', 'Drama', 2018),
+    'Air': Filme('Air: A Historia por tra do Logo', 'Ben Affleck', 'Drama', '2023')
 }
 
 # Função para adicionar filmes ao catálogo
